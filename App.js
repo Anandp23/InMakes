@@ -34,7 +34,7 @@ import Notification from './screen/Drawer/Notification'
 import Referrals from './screen/Drawer/Referrals'
 import Shareapp from './screen/Drawer/Shareapp'
 import Logout from './screen/Drawer/Logout'
-import Videoplay from './screen/Videoplay';
+import Videoplay from './screen/Videoplay'
 import School from './screen/School';
 
 
@@ -145,6 +145,8 @@ function MyTop(){
       <Top.Screen name='Chaptertest' component={Chaptertest} options={{tabBarLabel: 'Chapter Test'}}/>
       <Top.Screen name='Resources' component={Resources} options={{tabBarLabel: 'Resourses'}}/>
       <Top.Screen name='QNBank' component={QNBank} options={{tabBarLabel: 'QN Bank'}}/>
+      <Stack.Screen name='Videoplay' component={Videoplay} options={{headerShown:false}}/>
+      
     </Top.Navigator>
     </NavigationContainer>
   )

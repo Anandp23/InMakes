@@ -7,9 +7,10 @@ const Videos = ({navigation}) =>{
     return(
         <View style={styles.container}>
         <ScrollView style={styles.scrollView}>
-                <View style = {styles.card}>                    
+                <View style = {styles.card}>  
+                                 
                             <Image source={require('../images/class.jpg')} style={{height:230,width:'100%',}}></Image>
-                            <TouchableOpacity onPress={()=>navigation.navigate('Videoplay')}>
+                            <TouchableOpacity onPress={()=>navigation.navigate('Videoplay' )}>
                             <Text style = {{fontSize: 20,color: 'black',fontWeight: 'bold',margin: 20}}
                             >
                                 Long chapter name can be shown here.</Text></TouchableOpacity>
@@ -19,9 +20,12 @@ const Videos = ({navigation}) =>{
                                 <MaterialCommunityIcons name="album" color={'grey'} size={20} style={{marginLeft: 20}}/>
                                 <Text style={{marginLeft:5, color: 'grey'}}>124 hour</Text>
                             </View>   
-                            <TouchableHighlight style={{height:40,width: 100,backgroundColor: '#15ed4f', marginTop:'-50%',marginLeft:'65%',borderRadius:5,justifyContent:'center',alignItems: 'center'}}>
+                            <TouchableHighlight 
+                            onPress={()=> navigation.navigate('MyStack')}
+                            style={{height:40,width: 100,backgroundColor: '#15ed4f', marginTop:'-50%',marginLeft:'65%',borderRadius:5,justifyContent:'center',alignItems: 'center'}}>
                                 <Text style={{color:'white'}}>Biology</Text>
-                                </TouchableHighlight>                 
+                                </TouchableHighlight>   
+                                           
                 </View>     
 
                 <View style = {styles.card}>                    

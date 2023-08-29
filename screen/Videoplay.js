@@ -1,10 +1,11 @@
 import React, {Component} from "react";
-import { View, Text, StyleSheet, Image, TouchableHighlight } from "react-native";
+import { View, Text, StyleSheet, Image, TouchableHighlight, ScrollView } from "react-native";
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 
-const Videoplay = ({navigation}) =>{
+const Videoplay = (navigation) =>{
         return(
+            <ScrollView>
             <View style={styles.container}>
                 <Image source={require('./images/class.jpg')} style={{height:280,width:500,}}></Image>
                 
@@ -40,6 +41,7 @@ const Videoplay = ({navigation}) =>{
                 </View>
                 
             </View>
+            </ScrollView>
         )
     
 }
